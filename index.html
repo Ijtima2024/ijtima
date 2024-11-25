@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ijtima Engineering Pte Ltd</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('gate.PNG') no-repeat center center fixed;
+            background-size: cover;
+            color: #FFFFFF; /* All text white */
+            padding-bottom: 50px;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #a4ac86; /* Black */
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #FFFFFF; /* White text */
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            background-color: #c2c5aa; /* Semi-transparent black */
+            padding: 20px;
+            border-bottom: 2px solid #FF0000; /* Red Border */
+        }
+        .header h1 {
+            font-size: 46px;
+            margin: 0;
+        }
+        .header .ijtima {
+            color: #FF0000; /* Red for "Ijtima" */
+        }
+        .header .engineering {
+            color: #000000; /* Black for "Engineering Pte Ltd" */
+        }
+        .header img {
+            max-width: 150px;
+        }
+
+        .slogan {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #FF0000; /* Red */
+        }
+
+        /* Marquee Animation */
+        .marquee {
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .marquee p {
+            position: absolute;
+            animation: marquee 10s linear infinite;
+            font-size: 24px;
+            color: #FF0000; /* Red */
+            font-weight: bold;
+        }
+
+        @keyframes marquee {
+            0% {
+                left: 100%;
+            }
+            100% {
+                left: -100%;
+            }
+        }
+
+        /* Services Section */
+        .services {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            background-color: #c2c5aa; /* Semi-transparent black */
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+        }
+        .services h2 {
+            font-size: 38px;
+            color: #0000FF; /* Blue for other headings */
+            margin-bottom: 20px;
+        }
+
+        /* Services List */
+        .services ul {
+            list-style-type: disc;
+            padding-left: 40px;
+            font-size: 18px;
+            color: #FFFFFF; /* White text */
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .services li {
+            margin-bottom: 10px;
+        }
+
+        /* About Us Section */
+        .about-us {
+            background-color: #c2c5aa; /* Semi-transparent black */
+            padding: 40px;
+            margin-top: 40px;
+            text-align: center;
+            border-top: 2px solid #FF0000; /* Red Border */
+            border-radius: 10px;
+        }
+        .about-us h2 {
+            font-size: 28px;
+            color: #0000FF; /* Blue for other headings */
+        }
+        .about-us p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #FFFFFF; /* White text */
+        }
+
+        /* Contact Us Section */
+        .contact-info {
+            margin-top: 40px;
+            text-align: center;
+            padding: 20px;
+            background-color: #c2c5aa; /* Semi-transparent black */
+            border-top: 2px solid #FF0000; /* Red Border */
+            border-radius: 10px;
+        }
+        .contact-info h2 {
+            font-size: 28px;
+            color: #0000FF; /* Blue for other headings */
+        }
+        .contact-info p {
+            font-size: 18px;
+            color: #FFFFFF; /* White text */
+        }
+        .contact-info a {
+            color: #FF0000; /* Red */
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Enquiry Form Section */
+        .enquiry-form {
+            background-color: #c2c5aa; /* Semi-transparent black */
+            padding: 40px;
+            margin-top: 40px;
+            text-align: center;
+            border-top: 2px solid #FF0000; /* Red Border */
+            border-radius: 10px;
+        }
+        .enquiry-form h2 {
+            font-size: 28px;
+            color: #0000FF; /* Blue for other headings */
+        }
+        .enquiry-form input, .enquiry-form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #FF0000;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .enquiry-form button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #FF0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .enquiry-form button:hover {
+            background-color: #cc0000;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            background-color: #000000; /* Black */
+            color: #FFFFFF; /* White */
+            padding: 10px;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="home" class="header">
+        <img src="logo.png" alt="Ijtima Engineering Logo">
+        <h1><span class="ijtima">Ijtima</span> <span class="engineering">Engineering Pte Ltd</span></h1>    
+    </div>
+
+    <!-- Marquee Section -->
+    <div class="marquee">
+        <p>"Your Trusted Partner for Sliding Gate Installation"</p>
+    </div>
+
+    <!-- Navbar Section -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about-us">About Us</a>
+        <a href="#contact-us">Contact Us</a>
+        <a href="#enquiry-form">Enquiry Form</a>
+    </nav>
+
+    <!-- Services Section -->
+    <div id="services" class="services">
+        <h2>Our Services</h2>
+        <div id="services-list">
+            <h3>Services We Provide</h3>
+            <ul>
+                <li>Sliding Gate Installation</li>
+                <li>Automatic Gate Systems</li>
+                <li>Gate Repairs and Maintenance</li>
+                <li>Security Gate Solutions</li>
+                <li>Customized Gate Designs</li>
+                <li>Gate Motor Installation</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about-us" class="about-us">
+        <h2>About Us</h2>
+        <p>Ijtima Engineering Pte Ltd is a leading provider of high-quality sliding gate installation and automatic gate systems. Our company specializes in offering secure, reliable, and customized gate solutions for both residential and commercial properties. Our team of experts ensures that every installation meets the highest standards of safety and efficiency.</p>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div id="contact-us" class="contact-info">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+        <p>Email: <a href="mailto:ijtima2014@yahoo.com">ijtima2014@yahoo.com</a></p>
+        <p>Phone: +65 6344 5006</p>
+        <p>UEN: 201303393N</p>
+        <p>Address: 212 Telok Kurau Road, Bright Centre, #04-218, Singapore 423835</p>
+    </div>
+
+    <!-- Enquiry Form Section -->
+    <div id="enquiry-form" class="enquiry-form">
+        <h2>Get In Touch</h2>
+        <form action="mailto:ijtima2014@yahoo.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <input type="tel" name="phone" placeholder="Your Phone Number"><br>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br>
+            <button type="submit">Submit Enquiry</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Ijtima Engineering Pte Ltd. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
